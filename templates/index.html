@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Meghna Behari</title>
+	<link rel="stylesheet" href="../static/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/css/style.css">
+	<link rel="stylesheet" href="../static/css/fixed.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+	<script src="https://kit.fontawesome.com/a7077fd40b.js" crossorigin="anonymous"></script>
+	<!-- <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script> -->
+
+
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+	<script>
+		// init controller
+		var controller = new ScrollMagic.Controller();
+		// build scene				
+	</script>
+
+<!--- Start Home Section -->
+	<!-- <div id="home"> -->
+		
+		<!-- Start Nav -->
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+			<a class="navbar-brand" href="#">MB</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class ="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projects">Projects</a>
+					</li> 
+				</ul>
+			</div>
+		</nav>
+		<!-- End Nav -->
+		
+		<!-- Start Landing Page Section -->
+		<div id = "home">
+			<div class = "landing">
+				<div class ="home-wrap">
+					<div class="home-inner">
+					</div>
+				</div>
+			</div>
+		
+		
+		<div class = "caption text-center" id="trigger1">
+			<div id = "reveal1">
+				<h1>Meghna Behari</h1>
+				<h4>Computer Science @ Harvard</h4>
+				<a href ="www.linkedin.com/in/meghna-behari-052132180" target = "_blank"><i class="fa-brands fa-linkedin fa-3x" style="color:white" ></i></a>
+				<a href ="" target = "_blank"><i class="fa-brands fa-github fa-3x" style="color:white"></i></a>
+				
+
+				<script>
+					new ScrollMagic.Scene({
+							triggerElement: "#trigger1",
+							triggerHook: 0.9, // show, when scrolled 10% into view
+							duration: "90%", // hide 10% before exiting view (80% + 10% from bottom)
+							offset: 50, // move trigger to center of element
+
+						})
+						.setClassToggle("#reveal1", "visible") // add class to reveal
+						.addTo(controller);
+				</script>
+			</div>	
+			</div>
+
+			
+		</div>
+			
+		<!-- End Landing Page Section -->
+		
+		
+	<!-- </div> -->
+<!--- End Home Section -->
+	
+<!--- Start About Section -->
+	<div class="offset" data-spy="scroll" data-target="#navbar-example2" data-offest="0" id="about">
+		<div class="jumbotron rounded-0" id="trigger2"> 
+			<div id = "reveal2">
+				<div class="col-12 narrow text-center">
+					<h1 class="display-1">ABOUT</h1>
+					<img
+					src= "../static/img/personal.jpg"
+					class="img-fluid hover-shadow rounded-circle "
+					alt="Personal Picture"
+				  	/>
+					<p> I am interested in using CS for environmental problems, particulalry using AI to work towards solutions within climate change. I am also interested in euntrepreneurship and VC. Read below to learn more about my projects or check out my GitHub. Click on my LinkedIn link above to contact me! </p>
+				
+				
+				</div>
+			</div>
+		</div>
+
+		<script>
+			new ScrollMagic.Scene({
+					triggerElement: "#trigger2",
+					triggerHook: 0.9, // show, when scrolled 10% into view
+					duration: "0", // hide 10% before exiting view (80% + 10% from bottom)
+					offset: 50, // move trigger to center of element
+
+				})
+				.setClassToggle("#reveal2", "visible") // add class to reveal
+				.addTo(controller);
+		</script>
+		
+	</div>
+<!--- End About Section -->
+
+<!--- Start Projects Section -->
+<div class="offset" data-spy="scroll" data-target="#navbar-example2" data-offest="0" id="projects">
+	<div class="jumbotron rounded-0" id="trigger3"> 
+		<div id ="reveal3">
+			<div class="col-12 narrow text-center">
+				<h1 class="display-1">PROJECTS</h1>
+				<div class="col-12 narrow text-left">
+					<h3>AquaBot</h3>
+					<p>Insert description</p>
+					<h3>RescueBot</h3>
+					<p>Insert description</p>
+					<h3>Fracking Impact on Waterways</h3>
+					<!-- <img class="proj-img" src="../static/img/backg2.jpeg"/> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		new ScrollMagic.Scene({
+				triggerElement: "#trigger3",
+				triggerHook: 0.9, // show, when scrolled 10% into view
+				duration: "0", // hide 10% before exiting view (80% + 10% from bottom)
+				offset: 50, // move trigger to center of element
+
+			})
+			.setClassToggle("#reveal3", "visible") // add class to reveal
+			.addTo(controller);
+	</script>
+</div>
+<!--- End Projects Section -->
+	
+	
+	
+<!--- Start Contact Section -->
+	<div id="contact" class="offset">
+		<footer>
+			<div class = "row justify-content-center">
+				<!-- <div class = "col-md-5 text-center">
+					<p>Striving to provide clean drinking water to all communities</p>
+					<strong>Contact Info</strong>
+					<p>(888) 888-8888<br>meghna@crowdcreek.org</p>
+					<a href ="" target = "_blank"><i class = "fab fa-twitter-square"></i></a>
+						
+					<a href ="" target = "_blank"><i class = "fab fa-instagram"></i></a>
+									
+					
+					</div>
+					
+				<hr class = "socket"> -->
+				&copy; Meghna Behari 2022
+				
+			</div>
+		</footer>
+		
+	</div>
+<!--- End Contact Section -->
+
+</body>
+
+</html>
