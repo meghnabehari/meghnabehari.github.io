@@ -29,7 +29,7 @@
 		
 		<!-- Start Nav -->
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-			<a class="navbar-brand" href="#">MB</a>
+			<!-- <a class="navbar-brand" href="#"></a> -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -51,9 +51,74 @@
                 <div id = "reveal2">
                     <div class="col-12 narrow text-center">
                         <h1 class="display-3">RescueBot</h1>
+                        <img
+                        src= "../static/img/rescuebot/RescueBot Diagram.png"
+                        class="img-fluid hover-shadow "
+                        alt="RescueBot Diagram"
+                          />
+                        <!-- <p><em>I conducted this project individually and submitted to the Pittsburgh Regional Science and Engineering
+                            Fair. I was awarded 2nd place in the Robotics and Engineering category for this project.</em></p> -->
+                        <p>In recent years, natural disasters including hurricanes, earthquakes, and forest fires have increased
+                            significantly, causing serious devastation. In these natural disaster settings, rescuers are responsible for
+                            locating survivors and moving them to safety. They must manually search through rubble, debris, or flood
+                            conditions to locate survivors, which poses risks to their health and safety. To address this problem, an
+                            approach is needed to increase safety for both rescuers and those in need of rescue. In this project, I
+                            developed an assistive rescue-aid platform called RescueBot. RescueBot travels autonomously through a
+                            disaster-stricken area, searching for human presence using infrared thermography and concurrently
+                            assessing any dangerous obstacles obstructing the path. Once the area has been assessed, a route which
+                            maximizes efficiency and safety is produced using a shortest path algorithm. This route provides a path to
+                            safety and shelter, and helps rescuers identify an efficient route to rescue people in the quickest and safest
+                            manner. The body of Rescuebot is a multi-rotor copter called a quadcopter, consisting of a carbon fiber
+                            frame and 5 inch propellers. To control the motion of the UAV there is an Inertial Measurement Unit
+                            (IMU) autopilot, called ArduPilot Mega (APM). The APM software, called Mission Planner, is based
+                            upon the same software I used to program the thermal sensor, and comes with an easy-to-use UI to aid in
+                            set-up. I used Mission Planner’s open source firmware to set-up and initialize my drone. </p>
+                            
+                            <p>To understand
+                            RescueBot’s application in the rescue aid process, I spoke with several representatives from The Federal
+                            Emergency Management Agency (FEMA). They confirmed that a device such as RescueBot would be
+                            applicable to their work, and could help assist in the rescue aid process to make it safer and more
+                            efficient.</p>
+                            <div class="col-12 narrow text-center">
+                              <div id = "carouselExampleFade" class = "carousel carousel-fade" data-ride = "carousel">
+                                <div class = "carousel-inner">
+                                   <div class = "carousel-item active">
+                                      <img class = "d-block w-100" 
+                                         src = "../static/img/rescuebot/front.JPG" 
+                                         alt = "First slide">
+                                   </div>
+                                   
+                                   <div class = "carousel-item">
+                                      <img class = "d-block w-100" 
+                                         src = "../static/img/rescuebot/depth.jpg"
+                                         alt = "Second slide">
+                                   </div>
+                                   
+                                   <div class = "carousel-item">
+                                      <img class = "d-block w-100" 
+                                         src = "../static/img/rescuebot/gps.JPG" 
+                                         alt = "Third slide">
+                                   </div>
+                                </div>
+                                
+                                <a class = "carousel-control-prev" href = "#carouselExampleFade" role = "button" data-slide = "prev">
+                                   <span class = "carousel-control-prev-icon" aria-hidden = "true"></span>
+                                   <span class = "sr-only">Previous</span>
+                                </a>
+                                
+                                <a class = "carousel-control-next" href = "#carouselExampleFade" role = "button" data-slide = "next">
+                                   <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
+                                   <span class = "sr-only">Next</span>
+                                </a>
+                          
+                        </div>
+                      </div>
+
+                            
                     </div>
                 </div>
             </div>
+               
 
     
             <script>
@@ -69,6 +134,21 @@
             </script>
             
         </div>
+
+        <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin = "anonymous">
+     </script>
+     
+     <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+        integrity = "sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+        crossorigin = "anonymous">
+     </script>
+     
+     <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+        integrity = "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+        crossorigin = "anonymous">
+     </script>
 		
     </body>
 </html>

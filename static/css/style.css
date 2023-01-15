@@ -128,7 +128,7 @@ a:hover{
 }
 
 .display-2 {
-	font-size: 3.5rem !important; 
+	font-size: 4.5rem !important; 
 	color:rgba(250, 250, 250, 0.4); 
 	font-weight: 600;  
 	text-transform: lowercase;
@@ -146,6 +146,13 @@ a:hover{
 
 .proj-img {
 border: none; 
+}
+
+
+#carouselExampleFade {
+  height: auto;
+  width: auto;
+  overflow: hidden;
 }
 
 
